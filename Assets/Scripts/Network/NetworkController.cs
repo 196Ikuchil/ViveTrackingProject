@@ -11,8 +11,9 @@ namespace Network
         GlobalSettings setting;
         [SerializeField]
         NetworkManager netManager;
+
         [SerializeField]
-        ObjectCreator creator;
+        GameObject roomPrefab;
 
         // Use this for initialization
         void Start ()
@@ -20,11 +21,12 @@ namespace Network
             if ( setting.playerType == PlayerType.HOST )
             {
                 netManager.StartHost ();
-                creator.SpawnObject (creator.RoomPrefab);
+                NetworkServer.Spawn (Instantiate (roomPrefab));
             }
             else if ( setting.playerType == PlayerType.CLIENT )
             {
                 netManager.StartClient ();
+
             }
             else
             {
