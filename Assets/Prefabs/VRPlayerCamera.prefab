@@ -26,6 +26,9 @@ GameObject:
   - component: {fileID: 114515258647857078}
   - component: {fileID: 114996068331383220}
   - component: {fileID: 114074470496251214}
+  - component: {fileID: 114508749821415646}
+  - component: {fileID: 114260296389622784}
+  - component: {fileID: 114704702402924094}
   m_Layer: 0
   m_Name: VRPlayerCamera
   m_TagString: Untagged
@@ -109,6 +112,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rightHand: {fileID: 1056631468386282, guid: aab9e325c2da69c4ea158e20f11e5d66, type: 2}
   leftHand: {fileID: 1111387412355826, guid: bdcf2ffb5f13d644c91947a946d81830, type: 2}
+--- !u!114 &114260296389622784
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1861108584781268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f3201049654082489f7af46f2f34988, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114508749821415646
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1861108584781268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 068e7913b28c59a47baad91cc71098aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114515258647857078
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -141,6 +166,19 @@ MonoBehaviour:
     i15: 173
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
+--- !u!114 &114704702402924094
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1861108584781268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02a0c74cdd0060e45a8dbf292a28a0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TrackerManagerPref: {fileID: 1359484030318056, guid: 5437d153a44404642a8df664a8bc7649,
+    type: 2}
 --- !u!114 &114996068331383220
 MonoBehaviour:
   m_ObjectHideFlags: 1

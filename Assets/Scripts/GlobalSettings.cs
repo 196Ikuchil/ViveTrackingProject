@@ -13,6 +13,7 @@ public enum CameraType
 {
     SIMPLE,
     VR,
+    VRTrack,
     MR
 }
 
@@ -32,6 +33,9 @@ public class GlobalSettings : SingletonMonoBehaviour<GlobalSettings>
                 VRSettings.enabled = false;
                 break;
             case ( CameraType.VR ):
+                VRSettings.enabled = true;
+                break;
+            case ( CameraType.VRTrack ):
                 VRSettings.enabled = true;
                 break;
             case ( CameraType.MR ):

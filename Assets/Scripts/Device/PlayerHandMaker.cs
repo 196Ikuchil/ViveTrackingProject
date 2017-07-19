@@ -17,20 +17,20 @@ namespace Device
         [ClientCallback]
         void Start ()
         {
-            if ( GlobalSettings.Instance.cameraType == CameraType.VR )
+			if ( GlobalSettings.Instance.cameraType == CameraType.VR || GlobalSettings.Instance.cameraType== CameraType.VRTrack)
             {
                 CmdCreateHands (this.gameObject);
             }
+
+	
         }
 
         [Command]
         private void CmdCreateHands ( GameObject obj )
         {
-            Debug.Log ("hello");
+			Debug.Log ("create hand");
             NetworkServer.SpawnWithClientAuthority (Instantiate (rightHand), obj);
             NetworkServer.SpawnWithClientAuthority (Instantiate (leftHand), obj);
-            //NetworkServer.Spawn (Instantiate (rightHand));
-            //NetworkServer.Spawn (Instantiate (leftHand));
         }
         // Update is called once per frame
         void Update ()

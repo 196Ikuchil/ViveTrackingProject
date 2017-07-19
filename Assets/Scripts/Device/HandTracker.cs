@@ -17,10 +17,12 @@ namespace Device
         {
 
         }
+
         [ClientCallback]
         // Update is called once per frame
         void Update ()
         {
+            //権限のあるクライアントのみ、位置を変更できる
             if ( hasAuthority )
             {
                 var hand = InputTracking.GetLocalPosition (this.hand);
