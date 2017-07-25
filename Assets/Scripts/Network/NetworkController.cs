@@ -14,7 +14,8 @@ namespace Network
 
         [SerializeField]
         GameObject roomPrefab;
-
+        [SerializeField]
+        GameObject cube;
         // Use this for initialization
         void Start ()
         {
@@ -22,6 +23,7 @@ namespace Network
             {
                 netManager.StartHost ();
                 NetworkServer.Spawn (Instantiate (roomPrefab));
+                NetworkServer.Spawn (Instantiate (cube));
             }
             else if ( setting.playerType == PlayerType.CLIENT )
             {

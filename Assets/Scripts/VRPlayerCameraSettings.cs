@@ -6,6 +6,7 @@ public class VRPlayerCameraSettings : MonoBehaviour
 {
 
     Camera camera;
+    float mrFieldOfView = 31.2f;
     // Use this for initialization
     void Start ()
     {
@@ -13,6 +14,7 @@ public class VRPlayerCameraSettings : MonoBehaviour
         {
             camera.clearFlags = CameraClearFlags.SolidColor;
             camera.backgroundColor = Color.black;
+            camera.fieldOfView = mrFieldOfView;
         }
 
     }

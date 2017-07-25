@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 114786856206140542}
   - component: {fileID: 114795000907965914}
   - component: {fileID: 114485363406101352}
+  - component: {fileID: 114708872573801144}
   m_Layer: 0
   m_Name: LeftHandController
   m_TagString: Untagged
@@ -146,6 +147,18 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
+--- !u!114 &114708872573801144
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1111387412355826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf3761f3445bb648b35a983a3acf2ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manipObj: {fileID: 0}
 --- !u!114 &114786856206140542
 MonoBehaviour:
   m_ObjectHideFlags: 1

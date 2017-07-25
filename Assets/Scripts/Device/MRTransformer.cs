@@ -27,13 +27,21 @@ namespace Device
         [ClientCallback]
         void Update ()
         {
-            if ( tracker == null ) tracker = GameObject.Find ("ViveTrackingManager(Clone)").GetComponent<ViceTrackerDevice> ();
-            if ( hasAuthority )
+            if ( tracker == null )
             {
-                Debug.Log ("trackerpos=" + tracker.pos);
-                positionParent.transform.position = ( -1 * InputTracking.GetLocalPosition (VRNode.CenterEye) + tracker.pos );
-                Debug.Log ("coerrect pos setted");
-                //rotationは自分の値を使用する
+                tracker = GameObject.Find ("ViveTrackingManager(Clone)").GetComponent<ViceTrackerDevice> ();
+            }
+            else
+            {
+
+
+                if ( hasAuthority )
+                {
+                    Debug.Log ("trackerpos=" + tracker.pos);
+                    positionParent.transform.position = ( -1 * InputTracking.GetLocalPosition (VRNode.CenterEye) + tracker.pos );
+                    Debug.Log ("coerrect pos setted");
+                    //rotationは自分の値を使用する
+                }
             }
         }
 
