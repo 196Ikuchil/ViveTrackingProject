@@ -6,15 +6,25 @@ public class VRPlayerCameraSettings : MonoBehaviour
 {
 
     Camera camera;
-    float mrFieldOfView = 31.2f;
+    //float mrFieldOfView = 31.2f;
+    float mrFieldOfView = 16f;
     // Use this for initialization
     void Start ()
     {
-        if ( GlobalSettings.Instance.cameraType == CameraType.MR )
+
+        switch ( GlobalSettings.Instance.cameraType )
         {
-            camera.clearFlags = CameraClearFlags.SolidColor;
-            camera.backgroundColor = Color.black;
-            camera.fieldOfView = mrFieldOfView;
+            case CameraType.SIMPLE:
+                break;
+            case CameraType.VR:
+            case CameraType.VRTrack:
+                camera.stereoSeparation = 50;
+                break;
+            case CameraType.MR:
+                camera.clearFlags = CameraClearFlags.SolidColor;
+                camera.backgroundColor = Color.black;
+                camera.fieldOfView = mrFieldOfView;
+                break;
         }
 
     }

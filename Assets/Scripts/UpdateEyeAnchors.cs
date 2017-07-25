@@ -40,6 +40,6 @@ public class UpdateEyeAnchors : MonoBehaviour
 
 
         }
-        Debug.Log (Mathf.Sqrt (Mathf.Pow (one[0].x - one[1].x, 2) + Mathf.Pow (one[0].y - one[1].y, 2) + Mathf.Pow (one[0].z - one[1].z, 2)));
+        Debug.Log ("eye distance = " + Mathf.Sqrt (Mathf.Pow (one[0].x - one[1].x, 2) + Mathf.Pow (one[0].y - one[1].y, 2) + Mathf.Pow (one[0].z - one[1].z, 2)));
     }
 }

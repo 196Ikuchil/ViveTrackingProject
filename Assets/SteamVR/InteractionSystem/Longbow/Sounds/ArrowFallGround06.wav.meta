@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 646c1d7f3f0747947a9f5fe264286c32
+guid: 9ad392a45efa3b14bbcc169371974cd7
 timeCreated: 1436565698
 licenseType: Store
 AudioImporter:
@@ -16,7 +16,6 @@ AudioImporter:
   normalize: 1
   preloadAudioData: 1
   loadInBackground: 0
-  ambisonic: 0
   3D: 1
   userData: 
   assetBundleName: 
