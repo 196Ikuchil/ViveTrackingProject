@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class VRPlayerCameraSettings : MonoBehaviour
 {
-
+    [SerializeField]
     Camera camera;
     //float mrFieldOfView = 31.2f;
     float mrFieldOfView = 16f;
